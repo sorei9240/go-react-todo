@@ -84,7 +84,6 @@ func getTodos(c *fiber.Ctx) error {
 
 func createTodos(c *fiber.Ctx) error {
 	todo := new(Todo)
-	// {id:0,completed:false,body:""}
 
 	if err := c.BodyParser(todo); err != nil {
 		return err
